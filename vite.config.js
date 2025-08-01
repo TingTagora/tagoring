@@ -7,5 +7,14 @@ export default defineConfig({
   server: {
     port: 3001, // Different port from main app
     host: true
+  },
+  preview: {
+    port: process.env.PORT || 4173,
+    host: '0.0.0.0'
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false
   }
 })

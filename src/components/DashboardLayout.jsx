@@ -7,7 +7,8 @@ import {
   FiActivity, 
   FiLogOut, 
   FiShield,
-  FiBarChart
+  FiBarChart,
+  FiBriefcase
 } from 'react-icons/fi';
 import { useAuth } from '../context/AuthContext';
 import { toast } from 'react-toastify';
@@ -45,6 +46,12 @@ const DashboardLayout = () => {
       href: '/dashboard/applications',
       icon: FiFileText,
       active: location.pathname === '/dashboard/applications'
+    },
+    {
+      name: 'Jobs',
+      href: '/dashboard/jobs',
+      icon: FiBriefcase,
+      active: location.pathname === '/dashboard/jobs'
     },
     {
       name: 'System Logs',

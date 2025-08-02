@@ -7,6 +7,7 @@ import DashboardLayout from './components/DashboardLayout';
 import PrivateRoute from './components/PrivateRoute';
 import UsersPage from './pages/UsersPage';
 import ApplicationsPage from './pages/ApplicationsPage';
+import JobsPage from './pages/JobsPage';
 import LogsPage from './pages/LogsPage';
 import StatsPage from './pages/StatsPage';
 import { ToastContainer } from 'react-toastify';
@@ -41,6 +42,7 @@ function AppContent() {
         <Route path="stats" element={<StatsPage />} />
         <Route path="users" element={<UsersPage />} />
         <Route path="applications" element={<ApplicationsPage />} />
+        <Route path="jobs" element={<JobsPage />} />
         <Route path="logs" element={<LogsPage />} />
       </Route>
       <Route 
